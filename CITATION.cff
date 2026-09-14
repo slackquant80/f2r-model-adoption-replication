@@ -2,6 +2,7 @@ cff-version: 1.2.0
 title: "A Second Opinion for the Portfolio: Replication Materials"
 version: 1.1
 type: software
+doi: 10.5281/zenodo.22750810
 authors:
   - family-names: Lee
     given-names: Sungkyu
