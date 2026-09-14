@@ -1,6 +1,6 @@
 # Release Notes — v1.1
 
-Public-replication candidate for the F2R model-adoption paper.
+Public replication release for the F2R model-adoption paper.
 
 - Regenerates Figures 1–5 with publication-consistent ordering, labels, axes, and sensitivity points.
 - Recomputes CAGR and cumulative turnover from included monthly portfolio paths.
