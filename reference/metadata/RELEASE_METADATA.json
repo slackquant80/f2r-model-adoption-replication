@@ -1,7 +1,11 @@
 {
   "paper_title": "A Second Opinion for the Portfolio: How a New Forecasting Model Changes Cross-Asset Allocation Decisions",
   "author": "Sungkyu Lee",
-  "paper_version": "v0.14 author release",
+  "paper_version": "v0.15 public release",
+  "ssrn_abstract_id": "7460378",
+  "ssrn_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7460378",
+  "ssrn_posted_date": "2026-09-14",
+  "slackquant_research_url": "https://research.slackquant.com/research/second-opinion-portfolio/",
   "replication_release": "v1.1",
   "replication_doi": "10.5281/zenodo.22750810",
   "zenodo_url": "https://doi.org/10.5281/zenodo.22750810",
