@@ -1,5 +1,7 @@
 # F2R Model-Adoption Replication Materials
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22750810.svg)](https://doi.org/10.5281/zenodo.22750810)
+
 Replication materials for **A Second Opinion for the Portfolio: How a New Forecasting Model Changes Cross-Asset Allocation Decisions** by Sungkyu Lee (2026), SlackQuant Investment Research Series.
 
 ## Scope
@@ -98,4 +100,4 @@ The repository follows an **architecture-visible / recipe-protected** disclosure
 
 ## Citation
 
-If you use these materials, please cite the accompanying working paper. See `CITATION.cff`.
+The archived replication release is available on Zenodo at DOI **10.5281/zenodo.22750810**. If you use these materials, please cite this software release and the accompanying working paper. See `CITATION.cff`.
