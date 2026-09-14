@@ -3,6 +3,8 @@
   "author": "Sungkyu Lee",
   "paper_version": "v0.14 author release",
   "replication_release": "v1.1",
+  "replication_doi": "10.5281/zenodo.22750810",
+  "zenodo_url": "https://doi.org/10.5281/zenodo.22750810",
   "prepared_date": "2026-09-14",
   "intended_repository": "slackquant80/f2r-model-adoption-replication",
   "scope": "paper-level replication from frozen derived evidence"
