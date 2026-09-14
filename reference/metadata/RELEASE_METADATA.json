@@ -1,0 +1,9 @@
+{
+  "paper_title": "A Second Opinion for the Portfolio: How a New Forecasting Model Changes Cross-Asset Allocation Decisions",
+  "author": "Sungkyu Lee",
+  "paper_version": "v0.14 author release",
+  "replication_release": "v1.1 candidate",
+  "prepared_date": "2026-09-14",
+  "intended_repository": "slackquant80/f2r-model-adoption-replication",
+  "scope": "paper-level replication from frozen derived evidence"
+}

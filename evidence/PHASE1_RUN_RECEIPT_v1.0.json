@@ -1,0 +1,57 @@
+{
+  "status": "PASS_PHASE1_EVIDENCE_RECONSTRUCTION",
+  "runner_version": "1.0",
+  "evidence_class": "RETROSPECTIVE_TECHNOLOGY_COUNTERFACTUAL_AND_SYSTEM_RND; NOT HISTORICAL_DEPLOYMENT_PIT_PROOF",
+  "production_authority_changed": false,
+  "phase1_origins": {
+    "from": "2017-03",
+    "to": "2026-06",
+    "n": 112
+  },
+  "variants": [
+    "CURRENT4_RANK",
+    "REX3_RANK",
+    "CHRONOS_STANDALONE",
+    "CURRENT4_CHRONOS20",
+    "C3_REX3_CHRONOS20",
+    "ZSPACE_REX3_CHRONOS20",
+    "C1_REX3_CHRONOS25",
+    "C2_CURRENT4_CHRONOS50",
+    "RIDGE_STANDALONE",
+    "ELASTICNET_STANDALONE",
+    "RANDOMFOREST_STANDALONE",
+    "XGBOOST_STANDALONE",
+    "REX3_CHRONOS10",
+    "REX3_CHRONOS33",
+    "REX3_CHRONOS50"
+  ],
+  "parity_gates": {
+    "current4_vs_frozen_ensemble": "PASS_EXACT_112",
+    "c3_vs_certified_historical_ledger": "PASS_EXACT_112"
+  },
+  "chronos": {
+    "model_id": "amazon/chronos-2",
+    "pinned_revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+    "cache_meta": {
+      "status": "PASS_COMPLETE_CACHE",
+      "cache_key": {
+        "runner_version": "1.0",
+        "model_id": "amazon/chronos-2",
+        "pinned_revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+        "config_sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+        "model_safetensors_sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+        "market_binding_manifest_sha256": "0e78db02cb5df73e539c0d61d6221199c311e2801035c2d3ea1b1d2bd504643e"
+      },
+      "completed_origins": 112,
+      "updated_at_utc": "2026-09-13T16:15:54.858909+00:00"
+    }
+  },
+  "input_hashes": {
+    "frozen_conventional_predictions": "04bb5063c32692c7b89450a39905770dea2cab4fe2bac98370da4595d8870b86",
+    "frozen_ensemble_decisions": "a9428128daaae6b4e16e1ced544a546cf1ba50bf528228a3e350fff1f722592a",
+    "target_panel": "77b79f0f3155b142b5e67ab96fdfcd6615541fbf20e6d12554372893bd7c8885",
+    "c3_certified_ledger": "e4585d8d84e217abbfc9ea0ab1915b3f4bbdb66a85e1a162b43431c5c574c34b",
+    "candidate_runtime_contract": "d292e2f9acf81083be4e9f95e026a9ad82f13c10a9e20e587b9cc37f4af5aaff"
+  },
+  "generated_at_utc": "2026-09-13T16:20:42.219180+00:00"
+}
