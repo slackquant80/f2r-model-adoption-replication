@@ -4,6 +4,13 @@
 
 Replication materials for **A Second Opinion for the Portfolio: How a New Forecasting Model Changes Cross-Asset Allocation Decisions** by Sungkyu Lee (2026), SlackQuant Investment Research Series.
 
+## Paper
+
+- SSRN: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7460378
+- SSRN Abstract ID: **7460378**
+- Posted: **September 14, 2026**
+- SlackQuant Research: https://research.slackquant.com/research/second-opinion-portfolio/
+
 ## Scope
 
 This repository reproduces the paper-level figures and numerical checks from **frozen derived research evidence**. It is intentionally narrower than the scientific forecasting pipeline and the production Forecast-to-Rank Allocation (F2R) system.
@@ -100,4 +107,4 @@ The repository follows an **architecture-visible / recipe-protected** disclosure
 
 ## Citation
 
-The archived replication release is available on Zenodo at DOI **10.5281/zenodo.22750810**. If you use these materials, please cite this software release and the accompanying working paper. See `CITATION.cff`.
+The archived replication release is available on Zenodo at DOI **10.5281/zenodo.22750810**. The paper is posted on SSRN as Abstract ID **7460378**. If you use these materials, please cite this software release and the accompanying working paper. See `CITATION.cff`.
