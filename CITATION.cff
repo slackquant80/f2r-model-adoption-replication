@@ -1,7 +1,22 @@
 cff-version: 1.2.0
 title: "A Second Opinion for the Portfolio: Replication Materials"
+version: 1.1
+type: software
 authors:
   - family-names: Lee
     given-names: Sungkyu
-year: 2026
-message: "If you use these materials, please cite the accompanying working paper."
+    affiliation: "Graduate School of Computing, Yonsei University"
+abstract: >-
+  Paper-level replication materials for "A Second Opinion for the Portfolio:
+  How a New Forecasting Model Changes Cross-Asset Allocation Decisions".
+  The package reproduces Figures 1–5 and validates the principal reported
+  numerical results from frozen derived research evidence.
+keywords:
+  - asset allocation
+  - machine learning
+  - time-series foundation models
+  - portfolio decision-making
+  - reproducibility
+repository-code: "https://github.com/slackquant80/f2r-model-adoption-replication"
+date-released: 2026-09-14
+message: "If you use these materials, please cite this software release and the accompanying working paper."
