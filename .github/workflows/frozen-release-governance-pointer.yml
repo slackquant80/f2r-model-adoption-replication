@@ -1,0 +1,32 @@
+name: Frozen release Governance pointer
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release-pointer:
+    name: Validate release-only Governance pointer
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify local scope and non-disclosure
+        env:
+          REPO_ID: slackquant80/f2r-model-adoption-replication
+          PRIVATE_OWNER_VISIBLE: "false"
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          text = Path("AGENTS.md").read_text(encoding="utf-8")
+          for token in (os.environ["REPO_ID"], "DOWNSTREAM_PUBLICATION", "GOV-UNIVERSAL-GITHUB-001", "GOVERNANCE_ACCESS_HOLD", "Pull", "Push"):
+              assert token in text, f"Missing release link: {token}"
+          if os.environ["PRIVATE_OWNER_VISIBLE"] == "false":
+              assert "slackquant80/research-governance" not in text, "Public contributor page discloses private owner"
+          print("DOWNSTREAM_PUBLICATION_POINTER_STATIC_PASS")
+          print("PRIVATE_CENTRAL_POLICY_FETCH_NOT_VERIFIED")
+          PY
