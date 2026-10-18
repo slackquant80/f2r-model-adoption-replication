@@ -21,7 +21,7 @@ The public replay:
 - recomputes the matched CAGR contrasts from the included portfolio summaries;
 - recomputes Top-4 overlap and changed-decision counts from the frozen target/rank panel;
 - recomputes the reported attribution concentration shares from the detailed attribution evidence;
-- regenerates Figures 1–5; and
+- regenerates Figures 1–6; and
 - verifies the reported Sharpe-ratio and RMSE anchors against the frozen scientific summaries.
 
 It does **not** rerun Chronos-2 inference, refit the conventional forecasting models from raw market data, recreate the scientific backtest from downloaded source data, or expose live F2R production configuration.
@@ -99,7 +99,11 @@ Technical research identifiers are retained in the frozen CSVs so the public evi
 
 ## Figure reproducibility
 
-The reproduction script regenerates the data, ordering, labels, axes, and marked sensitivity points used in Figures 1–5. Exact PDF/PNG bytes can still differ across operating systems because font rendering, Matplotlib backends, FreeType versions, and PDF serialization are environment-sensitive. Numerical equality, figure content, and validation checks—not cross-platform byte identity—define public replay success.
+The reproduction script regenerates the data, ordering, labels, axes, and marked sensitivity points used in Figures 1–6. Exact PDF/PNG bytes can still differ across operating systems because font rendering, Matplotlib backends, FreeType versions, and PDF serialization are environment-sensitive. Numerical equality, figure content, and validation checks—not cross-platform byte identity—define public replay success.
+
+## Figure 6: monthly-observed wealth (v1.2)
+
+The added cumulative net-wealth graph uses the **existing frozen monthly net returns**, not estimated or interpolated daily returns. It compares the incumbent four-model ensemble, the selected C3 hybrid and the separate C2 high-Chronos-weight challenger. The final August 2026 point includes returns only through **August 3, 2026**. Figures 1–5 and the original scientific analysis are unchanged. The paper’s annualized Sharpe ratio, volatility and daily maximum drawdown remain based on **2,327 observed daily returns**; monthly-sampled Figure 6 must not be read as a daily performance or within-month drawdown series. The Chronos-2 historical exercise is a retrospective technology counterfactual, not live out-of-sample deployment.
 
 ## Disclosure boundary
 

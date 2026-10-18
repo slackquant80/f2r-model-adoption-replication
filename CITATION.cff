@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "A Second Opinion for the Portfolio: Replication Materials"
-version: 1.1
+version: 1.2
 type: software
 doi: 10.5281/zenodo.22750810
 authors:
@@ -10,7 +10,7 @@ authors:
 abstract: >-
   Paper-level replication materials for "A Second Opinion for the Portfolio:
   How a New Forecasting Model Changes Cross-Asset Allocation Decisions".
-  The package reproduces Figures 1–5 and validates the principal reported
+  The package reproduces Figures 1–6 and validates the principal reported
   numerical results from frozen derived research evidence.
 keywords:
   - asset allocation
@@ -19,5 +19,5 @@ keywords:
   - portfolio decision-making
   - reproducibility
 repository-code: "https://github.com/slackquant80/f2r-model-adoption-replication"
-date-released: 2026-09-14
+date-released: 2026-10-18
 message: "If you use these materials, please cite this software release and the accompanying working paper."
