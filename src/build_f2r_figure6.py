@@ -47,19 +47,20 @@ def run(data_path: Path, output_dir: Path) -> None:
 
     output_dir.mkdir(parents=True, exist_ok=True)
     fig, ax = plt.subplots(figsize=(7.2, 3.06), dpi=160)
-    fig.subplots_adjust(left=.092, right=.985, top=.89, bottom=.27)
+    # F2R Figure 5 parity: no freestanding title, consistent 9pt axes and 8.3pt ticks.
+    # Keep the science/data, asset paths, legend labels and reporting dates unchanged.
+    fig.subplots_adjust(left=.115, right=.985, top=.95, bottom=.25)
     for key, name in SERIES:
         wealth = paths[key]
         ax.plot(np.arange(1, 113), wealth, lw=1.7, label=f'{name} (final {wealth[-1]:.2f}x)')
-    ax.set_title('Portfolio net wealth, observed at monthly reporting intervals', loc='left', fontsize=10)
     ax.set_ylabel('Cumulative net wealth (start = 1.00)', fontsize=9)
     ax.set_xlabel('Monthly reporting period', fontsize=9)
     ax.set_xlim(1, 112)
     ax.set_ylim(.8, 5.4)
     ax.set_xticks([1, 21, 45, 69, 93, 112], ['May 2017', '2019', '2021', '2023', '2025', 'Aug 2026*'])
-    ax.tick_params(axis='both', labelsize=7.6)
+    ax.tick_params(axis='both', labelsize=8.3)
     ax.grid(axis='y', alpha=.24)
-    ax.legend(loc='upper left', fontsize=7.5, frameon=False)
+    ax.legend(loc='upper left', fontsize=8.0, frameon=False)
     ax.spines[['top', 'right']].set_visible(False)
     fig.text(.092, .075, '* August 2026 is a partial month ending August 3. From frozen monthly net returns;', fontsize=7.2)
     fig.text(.092, .042, '  not a daily-performance curve or a real-time Chronos-2 deployment record.', fontsize=7.2)
