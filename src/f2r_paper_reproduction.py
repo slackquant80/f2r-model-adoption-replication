@@ -282,7 +282,9 @@ def main(output_dir: Path) -> int:
     ax.tick_params(axis="both", labelsize=8.3)
     ax.grid(True, alpha=0.22)
     for x, y in zip(weights, cagr_values):
-        ax.text(x, y + 0.08, f"{y:.1f}", ha="center", fontsize=8.3)
+        # Leftmost point label otherwise collides with the 15.0 y-axis tick.
+        label_x = x + 1.4 if x == 0 else x
+        ax.text(label_x, y + 0.10, f"{y:.1f}", ha="center", fontsize=8.3)
     fig.tight_layout(pad=0.4)
     save_figure(fig, output_dir, "Figure_5_reproduced")
 
